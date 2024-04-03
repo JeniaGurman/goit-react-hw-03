@@ -34,36 +34,31 @@ const ContactForm = ({ onAddContact }) => {
       onSubmit={handleSubmit}
       validationSchema={ContactFormSchema}
     >
-      {" "}
       <Form className={css.form}>
-        {" "}
         <label className={css.label} htmlFor={nameId}>
-          {" "}
-          Name{" "}
-        </label>{" "}
+          Name
+        </label>
         <Field
           className={css.input}
           type="text"
           name="name"
           id={nameId}
-        ></Field>{" "}
-        <ErrorMessage className={css.error} component="span" name="name" />{" "}
+        ></Field>
+        <ErrorMessage className={css.error} component="span" name="name" />
         <label className={css.label} htmlFor={numberId}>
-          {" "}
-          Number{" "}
-        </label>{" "}
+          Number
+        </label>
         <Field
           className={css.input}
           type="text"
           name="number"
           id={numberId}
-        ></Field>{" "}
-        <ErrorMessage className={css.error} component="span" name="number" />{" "}
+        ></Field>
+        <ErrorMessage className={css.error} component="span" name="number" />
         <button className={css.btn} type="submit">
-          {" "}
-          Add contact{" "}
-        </button>{" "}
-      </Form>{" "}
+          Add contact
+        </button>
+      </Form>
     </Formik>
   );
 };
