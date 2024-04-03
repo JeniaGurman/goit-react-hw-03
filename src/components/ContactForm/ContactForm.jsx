@@ -55,7 +55,7 @@ const ContactForm = ({ onAddContact }) => {
           id={numberId}
         ></Field>
         <ErrorMessage className={css.error} component="span" name="number" />
-        <button className={css.btn} type="submit">
+        <button className={css.btnAdd} type="submit">
           Add contact
         </button>
       </Form>
